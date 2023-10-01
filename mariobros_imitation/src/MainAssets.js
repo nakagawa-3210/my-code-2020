@@ -8,6 +8,9 @@ phina.define("MainAssets", {
         'chara/meropiyo': './assets/img/meropiyo.png',
         'chara/mikapiyo': './assets/img/mikapiyo.png',
         'chara/nasupiyo': './assets/img/nasupiyo.png',
+        'chara/precure': './assets/img/cureFighters.png',
+        'game/cureClear': './assets/img/cureClear.jfif',
+        'item/cureFairy': './assets/img/cureFairy.png',
         //タイル(マップオブジェクト)
         'tile/tiles': './assets/img/tiles.png',
         'tile/minTiles': './assets/img/minTiles.png',
@@ -30,7 +33,23 @@ phina.define("MainAssets", {
             "walk": {
               "frames": [12, 13, 14],
               "next": "walk",
-              "frequency": 6,
+              "frequency": 4,
+            },
+          }
+        },
+        "precure_ss":
+        {
+          "frame": {
+            "width": 48,
+            "height": 48,
+            "cols": 12,
+            "rows": 8,
+          },
+          "animations": {
+            "walk": {
+              "frames": [12, 13, 14],
+              "next": "walk",
+              "frequency": 4,
             },
           }
         },

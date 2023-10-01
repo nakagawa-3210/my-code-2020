@@ -5,11 +5,9 @@ phina.define('MainLoadScene', {
   init: function (options) {
     this.superInit(options);
     const loader = phina.asset.AssetLoader();
-
     loader.onload = () => {
       this.exit('title', options.option);
     }
     loader.load(options.assets);
-
   },
 });

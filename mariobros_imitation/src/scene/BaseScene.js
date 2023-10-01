@@ -75,5 +75,10 @@ phina.define("BaseScene", {
       }
     }
     return pipeGroup;
+  },
+
+  setupItem: function () {
+    const item = BaseObject('item/cureFairy', ITEM_GRID, ITEM_GRID);
+    return item;
   }
 });

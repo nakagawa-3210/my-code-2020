@@ -9,21 +9,22 @@ phina.define("BaseObject", {
     this.setCollider();
   },
   setCollider: function () {
-    var s1 = this.width * 0.6;
-    var s2 = this.width / 10;
-    var half = this.width / 2.5;
+    var s1 = this.width * 0.9;
+    var s2 = this.width / 4;
+    var half = this.width / 2;
     // コライダー
     const top = Collider().attachTo(this).setSize(s1, s2).offset(0, -half)
-    .show();
+    // .show();
     top.id = 'top';
     const bottom = Collider().attachTo(this).setSize(s1, s2).offset(0, half)
-    .show();
+    // .show();
     bottom.id = 'bottom';
     const left = Collider().attachTo(this).setSize(s2, s1).offset(-half, 0)
-    .show();
+    // .show();
     left.id = 'left';
     const right = Collider().attachTo(this).setSize(s2, s1).offset(half, 0)
-    .show();
+    // .show();
     right.id = 'right';
   },
+
 });

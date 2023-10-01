@@ -24,17 +24,20 @@ phina.define('MyManagerScene', {
         {
           label: "title",
           className: "TitleScene",
-          // option: {
-            width: GAME_SCREEN_WIDTH,
-            height: GAME_SCREEN_HEIGHT
-          // },
         },
         {
           label: 'main',
           className: 'MainScene',
-          width: GAME_SCREEN_WIDTH,
-          height: GAME_SCREEN_HEIGHT,
         },
+        {
+          label: 'result',
+          className: 'ResultScene',
+        },
+        
+        {
+          label: 'testspace',
+          className: 'TestScene'
+        }
       ]
     });
   }
