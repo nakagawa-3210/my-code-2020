@@ -1,0 +1,90 @@
+'use strict';
+console.log("hoge");
+phina.globalize();
+// 画面サイズ情報
+const GAME_SCREEN_WIDTH = 1280;
+const GAME_SCREEN_HEIGHT = 768;
+const GAME_SCREEN_WIDTH_HALF = GAME_SCREEN_WIDTH / 2;
+const GAME_SCREEN_HEIGHT_HALF = GAME_SCREEN_HEIGHT / 2;
+const GAME_SCREEN_TOP = 0;
+const GAME_SCREEN_BOTTOM = GAME_SCREEN_HEIGHT;
+const GAME_SCREEN_LEFT = 0;
+const GAME_SCREEN_RIGHT = GAME_SCREEN_WIDTH;
+const GAME_STAGE_WIDTH = 200;
+const GAME_INIT_MAP_END = GAME_SCREEN_WIDTH*1.5;
+//ゲーム音
+const GAME_BGM_VOLUME = 0.2;
+
+
+// ステージ内共通サイズ
+const BASE_GRID = 64;
+const BASE_GRID_HALF = BASE_GRID / 2;
+const BASE_GRID_QUARTER = BASE_GRID_HALF / 2;
+const CHARACTER_GRID = 64;
+const ITEM_GRID = 48;
+
+// 共通重力
+const ZERO_GRAVITY = 0;
+
+
+// player情報
+const MENTARO_FILE_SIZE = 750;
+const MENTARO_SCALE = 0.2;
+const MENTARO_GRID = MENTARO_FILE_SIZE*MENTARO_SCALE;
+
+const MENTARO_HEIGHT = 150;
+const MENTARO_WIDTH = 90;
+const PLAYER_JUMP_POWER = 15;
+const PLAYER_SPEED = 8;
+const PLAYER_GRAVITY = 0.55;
+const PLAYER_STOCK = 5;
+const PLAYER_ATTACK_POINT = 1;
+const PLAYER_HIT_POINT = 100;
+//プレイヤーの移動範囲
+	//シューティングゲーム
+const PLAYER_MOVE_RANGE_TOP = GAME_SCREEN_TOP + BASE_GRID*2;
+const PLAYER_MOVE_RANGE_BOTTOM = GAME_SCREEN_BOTTOM - BASE_GRID;
+const SHOOTING_PLAYER_MOVE_RANGE_LEFT = GAME_SCREEN_LEFT + BASE_GRID*1.5;
+const SHOOTING_PLAYER_MOVE_RANGE_RIGHT = GAME_SCREEN_WIDTH_HALF*1.25;
+	//スクロールゲーム 
+const PLAYER_MOVE_RANGE_LEFT = GAME_SCREEN_LEFT;
+const PLAYER_MOVE_RANGE_RIGHT = GAME_SCREEN_RIGHT/2;
+
+
+
+// 敵情報
+const ENEMY_GRID = 64;
+const ENEMY_SPEED = 3;
+const ENEMY_BERSERK_SPEED = 20;
+const ENEMY_GRAVITY = 0.55;
+const ENEMY_INTERVAL = 100;
+
+//シューティングボス
+const BOSS_HP = 250;
+const BOSS_AT = 6;
+//ザコ敵
+const ZACOOK_NUM = 15;
+const ZACOOK_HP = 12;
+const ZACOOK_AT = 2;
+const TOTAL_ROTATE_TIME = 4000;
+
+// 敵の移動方向マップ
+const ENEMY_DIRECTION_MAP = {
+	LEFT: -1,
+	RIGHT: 1
+};
+
+const GAME_SCENE_MAP = {
+  SCROLL_GAME: "scrollGame",
+  SHOOTING_GAME: "shootingGame",
+}
+
+// ゲーム終了マップ
+const GAME_EXIT_MAP = {
+	SCROLL_GAME_TIME: 100,
+	SCROLL_GAME_GOAL: 12800,
+	SHOOTING_GAME_TIME: 180,
+	SCROLL_GAME_CLEAR: {img: "game/cureClear", gridSize: 340, message: "GAME CLEAR!"},
+	SHOOTING_GAME_CLEAR: {img: "game/cureClear", gridSize: 340, message: "GAME CLEAR!"},
+	GAME_OVER: {img: "chara/precure", gridSize: BASE_GRID, message: "GAME OVER!"}
+}
