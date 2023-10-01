@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>MarioBros</title>
+  <script src="./lib/phina.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./src/SceneFlow.js"></script>
+  <script src="./src/Application.js"></script>
+  <script src="./src/InitialLoadScene.js"></script>
+  <script src="./src/MainLoadScene.js"></script>
+  <script src="./src/MainAssets.js"></script>
+  <script src="./src/util/Collider.js"></script>
+  <script src="./src/BaseObject.js"></script>
+  <script src="./src/Player.js"></script>
+  <script src="./src/BaseScene.js"></script>
+  <script src="./src/TitleScene.js"></script>
+  <script src="./src/MainScene.js"></script>
+  <script src="./src/GameManager.js"></script>
+</head>
+
+<body>
+  <!-- <script>
+    phina.main(() => GameApp({
+      startLabel: 'title',
+      width: GAME_SCREEN_WIDTH,
+      height: GAME_SCREEN_HEIGHT,
+      assets: asset,
+    }).run());
+  </script> -->
+  <script>
+    phina.main(() => Application({
+      width: GAME_SCREEN_WIDTH,
+      height: GAME_SCREEN_HEIGHT,
+    }).run());
+  </script>
+</body>
+
+</html>
