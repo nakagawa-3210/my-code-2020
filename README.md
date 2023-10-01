@@ -12,10 +12,11 @@
   - 動作確認：[ハナモンアドベンチャー](https://unityroom.com/games/hanadashortadventure)
   - 補足：UnityプロジェクトのScriptsフォルダの内容です
 - マリオブラザーズ風ゲーム
-  - ソースコード：[toshomentaro](https://github.com/nakagawa-3210/my-code-2020/tree/develop/toshomentaro)
+  - ソースコード：[mariobros_imitation](https://github.com/nakagawa-3210/my-code-2020/tree/develop/mariobros_imitation)
   - 動作確認：[PikoBros(スマイルプリキュア)](http://harapekochan.starfree.jp/mariobros_imitation/index.html)
-  - 補足：2023/10/01、StarServerFreeにて再度公開しました
+  - 補足：2023/10/01、StarServerFreeにて再度公開しました  
+  キャラクター画像は個人利用の範囲で留めております
 - オリジナルゲーム
   - ソースコード：[toshomentaro](https://github.com/nakagawa-3210/my-code-2020/tree/develop/toshomentaro)
   - 動作確認：[刀削麺太郎](http://harapekochan.starfree.jp/toshomentaro/index.html)
-  - 補足：2023/10/01、StarServerFreeにて再度公開しました
+  - 補足：2023/10/01、StarServerFreeにて再度公開しました  
